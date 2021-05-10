@@ -25,7 +25,8 @@ if(isset($_SESSION['login']) == false){
    <div class="tuika">
        <h1>管理画面</h1>
        <a href="staff_list.php">スタッフ管理画面</a><br>
-       <a href="order_list.php">予約管理画面</a><br><br>
+       <a href="order_list.php">予約管理画面</a><br>
+       <a href="menu_list.php">メニュー管理</a><br>
        <a href="staff_logout.php">ログアウト</a>
     </div>
     <footer>

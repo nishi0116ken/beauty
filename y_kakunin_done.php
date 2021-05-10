@@ -12,24 +12,6 @@
 </head>
 <body>
     <header><a href="index.php">Nakamura　Beauty</a></header>
-    <div id="menu-btn" class="menu-btn">
-        <i id ="menu-button" class="fas fa-bars"></i>
-    </div>
-    <nav id="nav">
-        <div id="close-btn">
-            <i class="fa fa-2x fa-times closebtn"></i>
-        </div>
-        <ul>
-            <li class="list"><a href="index.php">トップページ</a></li><br>
-            <li class="list"><a href="about.php">サイトについて</a></li><br>
-            <li class="list"><a href="staff_login.php">スタッフページ</a></li><br>
-            <li class="list"><a href="yoyaku.php">予約はこちら</a></li><br>
-            <li class="list"><a href="y_kakunin.php">予約確認</a></li><br>
-            <li class="list"><a href="ladies.php">ladeis</a></li><br>
-            <li class="list"><a href="mens.php">mens</a></li><br>
-            <li class="list"><a href="privacy.php">プライバシーポリシー</a></li><br>
-        </ul>
-    </nav>
     <h1>予約情報</h1>
     <?php 
     try{
@@ -40,9 +22,9 @@
         $name = htmlspecialchars($name,ENT_QUOTES,'UTF-8');
         $insta_id = htmlspecialchars($insta_id,ENT_QUOTES,'UTF-8');
     
-        $dsn = 'mysql:dbname=beauty;host=localhost;charset=utf8';
-        $user = 'root';
-        $password = 'mioyakenagjdt';
+        $dsn = 'mysql:dbname=heroku_faaf0db93aafd4a;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+        $user = 'b17734e198a8b6';
+        $password = 'ac4d752e';
         $dbh = new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         

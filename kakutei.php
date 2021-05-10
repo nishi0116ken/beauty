@@ -50,9 +50,9 @@
             $remarks = htmlspecialchars($remarks,ENT_QUOTES,'UTF-8');
 
             try{
-                $dsn = 'mysql:dbname=beauty;host=localhost;charset=utf8';
-                $user = 'root';
-                $password = 'mioyakenagjdt';
+                $dsn = 'mysql:dbname=heroku_faaf0db93aafd4a;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+                $user = 'b17734e198a8b6';
+                $password = 'ac4d752e';
                 $dbh = new PDO($dsn,$user,$password);
                 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         
@@ -80,7 +80,7 @@
             ?>
         </div>
         <div class="sub">
-            <a class="top" href="index.html">・トップページ</a>
+            <a class="top" href="index.php">・トップページ</a>
             <a class="kaku" href="y_kakunin.php">・予約の確認</a>
         </div>
         <div class="sec">
